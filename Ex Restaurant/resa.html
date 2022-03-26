@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Restaurant</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootswatch/dist/minty/bootstrap.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form action="recap.php" method="post" enctype="multipart/form-data">
+        <label for="nom">Nom : </label>
+        <input type="text" name="nom" id="nom" class="form-text" required>
+        <br>
+        <label for="prenom">Prenom : </label>
+        <input type="text" name="prenom" id="prenom" class="form-text" required/>
+        <br />
+        <label for="nbSandwichs">Nombre de sandwichs : </label>
+        <input
+          type="number"
+          min="1"
+          name="nbSandwichs"
+          id="nbSandwichs"
+          class="form-text"
+          required
+        />
+        <ul>
+
+        </ul>
+        <br />
+        <label for="adresse">Adresse : </label>
+        <textarea name="adresse" id="adresse" cols="30" rows="10" required></textarea>
+        <br>
+        <label for="cin">CIN: </label>
+         <input type="file" name="cin" id="cin" class="form-control" accept="image/*">
+        <br>
+        <input class="btn btn-primary" type="submit" value="Submit">
+      </form>
+    </div>
+    <script src="./script.js" async defer></script>
+  </body>
+</html>
